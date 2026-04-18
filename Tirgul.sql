@@ -21,24 +21,24 @@ VALUES (1, 'Noa', 15, 'Tel Aviv', 92.5),
 -- 1) select query to display all students and all columns
 
 SELECT *
-FROM STUDENTS
+FROM STUDENTS;
 
 -- 2) select query to show all students only name and grade
   
 SELECT NAME, GRADE
-FROM STUDENTS
+FROM STUDENTS;
 
 -- 3) select query to show all students who got grade above 90
   
 SELECT NAME
 FROM STUDENTS
-WHERE GRADE > 90
+WHERE GRADE > 90;
 
 -- 4) select all students where their name starts with M
   
 SELECT *
 FROM STUDENTS
-WHERE NAME LIKE 'M%'
+WHERE NAME LIKE 'M%';
 
 -- 5) show the avg grade, max, min
   
@@ -63,16 +63,16 @@ WHERE GRADE > (
 
 UPDATE STUDENTS
 SET GRADE=90
-WHERE NAME='Liam'
+WHERE NAME='Liam';
 
 -- Delete all students where city starts with "N"
   
 DELETE FROM STUDENTS
-WHERE CITY LIKE 'N%'
+WHERE CITY LIKE 'N%';
 
 -- Delete all students with grade 88
 DELETE FROM STUDENTS
-WHERE GRADE=88
+WHERE GRADE=88;
 
 -- Finally drop the table
 DROP TABLE STUDENTS;
